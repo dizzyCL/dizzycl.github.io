@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+html { 
+  background:  url(https://i.giphy.com/media/cxCFJbNKfMWUo/giphy.webp) no-repeat center center fixed; 
+  background-size: cover;
+}
+body {
+    font-family: 'VT323', monospace;
+	text-decoration: none;
+	color: #888888;
+	font-style: italic;
+    height: 50%;
+    position: fixed;
+    left: 50%;
+    bottom: 2.5%;
+    margin:0 auto;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+	user-select: none;
+	-webkit-animation: fadein 6s;
+    -moz-animation: fadein 6s;
+    -ms-animation: fadein 6s;
+    -o-animation: fadein 6s;
+    animation: fadein 6s;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+#center {               
+    position: absolute;
+    text-shadow: 2px 2px #000000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+.dropmenu {
+	color: white;
+}
+.dropmenu ul,
+.dropmenu ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.dropmenu ul li {
+    position: relative
+}
+
+.dropmenu ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.dropmenu ul li a:hover {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dropmenu li ul {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 0px
+}
+
+.dropmenu ul li:hover ul {
+    display: inline-block
+    width: 100%;
+}
+
+.dropmenu ul ul,
+.dropmenu ul li:hover ul ul,
+.dropmenu ul ul li:hover ul ul {
+    display: none
+}
+
+.dropmenu ul li:hover ul,
+.dropmenu ul ul li:hover ul,
+.dropmenu ul ul ul li:hover ul {
+    display: block
+}
+A:link {
+	color: #FFFFFF; text-decoration: none
+}
+A:visited {
+	color: #FFFFFF; text-decoration: none
+}
+A:hover {
+	text-shadow: 0pt 0pt 0.3em white, 0pt 0pt 0.3em white;
+	color: white; text-decoration: none
+}
+A:active {
+	color: #FFFFFF; text-decoration: none
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	
+#pad{
+    background-color: rgba(0,0,0,0.7);
+    padding:40px !important;
+}

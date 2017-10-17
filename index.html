@@ -1,0 +1,150 @@
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<head>
+<center>
+<div id="pad">
+<font size="15px">
+</font>		
+</div>
+</div>
+
+
+<body>
+    <div id="center">
+        <center>
+            <div class="animated fadeInUp">
+				<hr>
+                <div style="font-size:64px"><font color="#FFFFFF"></div>
+				<hr>
+    <div id="center">
+        <center>
+            <div class="animated fadeInUp">
+                <hr>
+                <div style="font-size:64px"><font color="#FFFFFF">AntiSocial</div>
+                <hr>
+		<div class="dropmenu">
+	<ul>
+	    
+		<li style="cursor:pointer">Social
+		
+		<ul>
+			<li><a href="https://twitter.com/dizzydll" target="_blank">twitter</a></li>
+			<li><a href="https://t.me/dizzydll" target="_blank">telegram</a></li>
+			<li><a href="http://steamcommunity.com/id/dizzydll" target="_blank">steam</a></li>
+			<li><a href="http://steamcommunity.com/groups/antisocialcf" target="_blank">steamgroup</a></li>
+			<li><a href="https://discord.gg/thZ3QG8" target="_blank">discord</a></li>
+		    <li><a href="https://soundcloud.com/dizzydll" target="_blank">SoundCloud</a></li>
+		<br>
+		<Br>
+		</ul>
+		</li>
+</div>
+</div>
+<script>
+  var sound = new Array();
+  sound[0]= "music/a.mp3"
+  sound[1]= "music/b.mp3"
+  sound[2]= "music/c.mp3"
+  sound[3]= "music/d.mp3"
+  sound[4]= "music/e.html"
+	
+
+  var randomsound = Math.floor(Math.random() * 5);
+  document.write ('<audio id="sound" loop autoplay preload><source src= "' + sound[randomsound] + '" hidden=true type="audio/mpeg" autostart=true loop=true>')
+  
+  </script>
+  
+  <script>
+var video = document.currentScript.parentElement;
+video.volume = 0.10;
+</script>
+
+	
+	<script type="text/javascript">
+var rev = "fwd";
+function titlebar(val)
+{ 
+	var msg  = "  AntiSocial  ";
+	var res = " ";
+	var speed = 750;
+	var pos = val;
+
+	msg = " "+msg+" ";
+	var le = msg.length;
+	if(rev == "fwd"){
+		if(pos < le){
+		pos = pos+1;
+		scroll = msg.substr(0,pos);
+		document.title = scroll;
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+		else{
+		rev = "bwd";
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+	}
+	else{
+		if(pos > 0){
+		pos = pos-1;
+		var ale = le-pos;
+		scrol = msg.substr(ale,le);
+		document.title = scrol;
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+		else{
+		rev = "fwd";
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+		}	
+	}
+}
+
+titlebar(0);
+</script>
+
+<script>
+$(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+});
+
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});
+</script>
+
+<script type='text/javascript'>
+var isCtrl = false;
+document.onkeyup=function(e)
+{
+    if(e.which == 17)
+    isCtrl=false;
+}
+document.onkeydown=function(e)
+{
+    if(e.which == 17)
+    isCtrl=true;
+    if((e.which == 85) || (e.which == 67) && (isCtrl == true))
+    {
+        return false;
+    }
+}
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+    return false;
+}
+function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
